@@ -8,9 +8,9 @@ if __name__ == "__main__":
     while not (keyboard.is_pressed("q")):
         try:
             points = pyautogui.locateOnScreen("icon.png",
-                                            confidence=0.8,
-                                            region=(197, 125, 825, 864),
-                                            grayscale=True)
+                                              confidence=0.8,
+                                              region=(197, 125, 825, 864),
+                                              grayscale=True)
             win32api.SetCursorPos((points.left + points.width // 2 - 10,
                                 points.top + points.height // 2))
             time.sleep(0.1)
